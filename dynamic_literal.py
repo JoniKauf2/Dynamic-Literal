@@ -6,7 +6,7 @@ def literalize(*values: str, anti_interning_method: Callable = lambda: str(uuid.
     """
     Creates a new Literal with the given values.\n
     This only changes the runtime type of the the Literal, while
-    the static type is based off the `interning_avoid_method` and
+    the static type is based off the `anti_interning_method` and
     cannot change. Therefore it has very limited use and is not designed
     for general purpose use.\n
     This was designed for libraries, more specifically for discord.py,
