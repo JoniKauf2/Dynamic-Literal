@@ -4,7 +4,7 @@ from enum import Enum
 
 def literalize(*values: str) -> Literal['*values']:
     """
-    Creates a new Literal with the given values.\n
+    Creates a new Literal with the given values.
     This only changes the runtime type of the the Literal.
     This was designed for libraries, more specifically for discord.py,
     that use type hinting to type check arguments. This allows the 
