@@ -1,5 +1,3 @@
-import uuid
-from typing import Literal, Callable
 from enum import Enum
 
 def literalize(*values: str | Iterable[str]) -> Literal['*values']:
